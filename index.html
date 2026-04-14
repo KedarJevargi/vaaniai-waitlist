@@ -29,16 +29,24 @@
 
     <main id="main-content" class="max-w-4xl w-full px-6 py-12 md:py-20 text-center space-y-16 z-10">
         
+        <!-- HERO -->
         <div class="space-y-6">
             <h1 class="text-6xl md:text-8xl font-extrabold leading-[1.05] tracking-tighter text-white">
                 Never miss a <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-500">customer call again.</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-500">
+                    customer call—or a customer.
+                </span>
             </h1>
+
             <p class="text-zinc-400 text-lg md:text-2xl max-w-2xl mx-auto font-light leading-relaxed">
-                Your 24/7 AI voice receptionist answers calls in <span class="text-white font-medium underline decoration-blue-500/50 underline-offset-8 italic">Kannada, Hindi & 8 other languages.</span>
+                An intelligent AI voice system that understands, responds, and takes action—answering calls in 
+                <span class="text-white font-medium underline decoration-blue-500/50 underline-offset-8 italic">
+                    Kannada, Hindi & 8+ languages.
+                </span>
             </p>
         </div>
 
+        <!-- FORM -->
         <div class="max-w-md mx-auto p-2 glass rounded-[3rem] shadow-2xl relative">
             <form id="waitlist-form" class="flex flex-col gap-2">
                 <input 
@@ -54,44 +62,63 @@
             </form>
         </div>
 
+        <!-- FEATURES -->
         <section class="space-y-12">
-            <h2 class="text-3xl font-bold tracking-tight">Intelligent Reception. No Human Involvement.</h2>
+            <h2 class="text-3xl font-bold tracking-tight">
+                Intelligent AI Reception That Handles Real Conversations
+            </h2>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+
                 <div class="p-8 glass rounded-[2.5rem] space-y-2">
                     <h4 class="font-bold text-blue-500 uppercase text-[10px] tracking-widest">Capabilities</h4>
                     <h3 class="text-xl font-bold">Appointment Booking</h3>
-                    <p class="text-zinc-500 text-sm">Automated scheduling through Google Calendar integration. The AI checks availability and offers slots instantly.</p>
+                    <p class="text-zinc-500 text-sm">
+                        Automatically books appointments by checking real-time availability—no manual calls, no double bookings.
+                    </p>
                 </div>
+
                 <div class="p-8 glass rounded-[2.5rem] space-y-2">
                     <h4 class="font-bold text-blue-500 uppercase text-[10px] tracking-widest">Capabilities</h4>
                     <h3 class="text-xl font-bold">Rescheduling</h3>
-                    <p class="text-zinc-500 text-sm">Handles requests to change or update existing bookings, ensuring your calendar stays accurate 24/7.</p>
+                    <p class="text-zinc-500 text-sm">
+                        Handles changes and updates instantly, keeping your schedule accurate without any effort.
+                    </p>
                 </div>
+
                 <div class="p-8 glass rounded-[2.5rem] space-y-2">
                     <h4 class="font-bold text-blue-500 uppercase text-[10px] tracking-widest">Capabilities</h4>
                     <h3 class="text-xl font-bold">Regional Support</h3>
-                    <p class="text-zinc-500 text-sm">Native fluency in Kannada, Hindi, Tamil, Telugu, and more—including natural code-switching (Hinglish/Kanglish).</p>
+                    <p class="text-zinc-500 text-sm">
+                        Speaks naturally in Kannada, Hindi, Tamil, Telugu, and more—with seamless Hinglish/Kanglish conversations.
+                    </p>
                 </div>
+
                 <div class="p-8 glass rounded-[2.5rem] space-y-2">
                     <h4 class="font-bold text-blue-500 uppercase text-[10px] tracking-widest">Capabilities</h4>
                     <h3 class="text-xl font-bold">Information & FAQs</h3>
-                    <p class="text-zinc-500 text-sm">Accurately answers inquiries about business hours, location, and service fees while escalating complex requests.</p>
+                    <p class="text-zinc-500 text-sm">
+                        Answers customer questions instantly and intelligently, while forwarding complex requests when needed.
+                    </p>
                 </div>
+
             </div>
         </section>
     </main>
 
+    <!-- SUCCESS MODAL -->
     <div id="success-state" class="hidden fixed inset-0 z-50 flex items-center justify-center px-6 backdrop-blur-3xl bg-black/60">
         <div class="max-w-md w-full glass rounded-[3.5rem] p-12 text-center space-y-8">
             <div class="mx-auto w-24 h-24 bg-blue-500 text-white rounded-full flex items-center justify-center text-5xl shadow-2xl shadow-blue-500/40">✓</div>
             <div class="space-y-4">
                 <h2 class="text-4xl font-extrabold text-white tracking-tight">You're on the list.</h2>
-                <p class="text-zinc-400 text-lg leading-relaxed">Thank you for your interest. We'll reach out to your email shortly.</p>
+                <p class="text-zinc-400 text-lg leading-relaxed">We’ll reach out soon with early access.</p>
             </div>
             <button onclick="window.location.reload()" class="w-full py-5 bg-white text-black rounded-full font-bold text-lg hover:bg-zinc-100 transition">Back to Home</button>
         </div>
     </div>
 
+    <!-- SCRIPT -->
     <script>
         const form = document.getElementById('waitlist-form');
         const mainContent = document.getElementById('main-content');
@@ -126,5 +153,6 @@
     <footer class="w-full py-12 text-center text-zinc-600 text-[10px] tracking-[0.3em] uppercase">
         © 2026 VaaniAI • Intelligent Voice Systems for SMBs
     </footer>
+
 </body>
 </html>
